@@ -1,0 +1,30 @@
+
+A task or a trajectory that a robot has to execute can be considered a sequence of skills. A skill is a basic environment-agnostic action that a robot can execute. For example, a skill could be to pick-kitchen-knife-from-holder robust of parameter values like kitchen counter-top height, knife handle shape, etc.  
+We propose creation of a marketplace of skills, from which a robot instance could draw capabilities to execute a task infront it. Onboard robot, a planner strings together skills as needed. 
+
+\subsection{Skill}
+A skill is a small action broken from a larger task, that ends with a "neutral state" from which another skill can continue.
+Instead of collection of waypoints that falls apart if the objects in the environment are moved, a skill is tolerant to minor changes and transferable to different nature of tasks. 
+
+At implementation, a skill is either:
+\paragraph{control logic:} controller utilizing Model Predictive control or PID for simple movements.
+\paragraph{neural network model:} trained with Reinforcement Learning (RL), or other methods like Evolutional Algorithims(EA).
+
+During execution, the above model or controller would have access to the robot's sensors. A main problem we would like to address is the ability to transfer a skill learned in one environment to another. Since the action is kept simple, this transfer should be easier than in the case of a end-to-end large model.
+
+Since one skill's training is independent of another, it is possible to experiment different methods for training each skill.
+This allows us to exploit domain-specific heuristics, allowing us to trim vast swathes of search space and reduces training complexity for RL based models.
+ 
+\subsection{Planner}
+Planner is responsible for odering skill models and executing them. Tasks can be predefined or generative in nature.
+
+\paragraph{Predefined Task:} Often the order of skill-models required to accompish a task is readily available like a receipe and doesnt demand "intelligence" at planning level. 
+
+\paragraph{Generative Task:} In this case, the planner has to decide the order of skill-models to execute. This is a more challenging problem and we would like to leave it out for future work.
+
+Also we would like to investgate how to manage errors during execution and preconditions for start of a skill.
+
+
+\subsection{Marketplace of Skills}
+
+This marketplace is a repository of skills that can be used by robots to execute
