@@ -1,0 +1,12 @@
+Vision-Language-Action (VLA) models are a class of models based on the transformer architecture and are designed to process and understand both visual and textual information. They are made up of two parts: 
+
+1. VLM (Vision-Language Model): This part of the model is responsible for understanding and processing visual and textual information. 
+
+2. Action Head: Made of diffusion transformers and are responsible for generating actions using the embeddings from the VLM. They can also take in additional inputs such as proprioceptive and previleged environment information.
+
+Some of the popular VLA models include:
+- SoFar \cite{qiSoFarLanguageGroundedOrientation2025}, state of the art in robot manipulation tasks in the Google SimplerEnv dataset \cite{liEvaluatingRealWorldRobot2024}.
+
+- OpenVLA \cite{kimOpenVLAOpenSourceVisionLanguageAction2024}, a 7B parameter model. It uses Lama 2 as the backbone and is trained on 970k robot demos in Open X-Embodiment dataset \cite{collaborationOpenXEmbodimentRobotic2024}.
+
+- SAM2ACT \cite{fangSAM2ActIntegratingVisual2025} is a new model focused on manipulation tasks. It is the leader in the RLbench dataset \cite{jamesRLBenchRobotLearning2019a}. 
