@@ -1,0 +1,13 @@
+{
+    "name": "TeX Live base",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "james-yu.latex-workshop",
+                "GitHub.copilot",
+                "lfs.vscode-emacs-friendly",
+                ]
+        }
+    }
+}
