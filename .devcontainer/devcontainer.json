@@ -1,6 +1,7 @@
 {
-    "name": "TeX Live base",
-    "dockerFile": "Dockerfile",
+    "name": "itex",
+    "image": "texlive/texlive:latest",
+    "runArgs": ["--network=host", "--rm", "--name", "itex"],
     "customizations": {
         "vscode": {
             "extensions": [
