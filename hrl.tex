@@ -1,0 +1,13 @@
+% classifications in hrl
+Hirarchical Reinforcement Learning (HRL) is a framework for breaking down complex tasks into simpler subtasks. It is accomplished by defining multiple layers of policies, where higher-level policies select subgoals or subtasks for lower-level policies to execute. 
+
+Bottom-up approach: Started with a set of low level skills, trained individually and freeze. Introduce a high level policy to select a subset of skills to execute. This method is widely used.
+
+Top-down approach: Train both high level and low level policies together. The main hurdles are: 
+\begin{enumerate}
+    \item number of low level policies: decomposing a task into a set of skills is still an open problem.
+    \item credit assignment problem (cap): how to assign credit to the right low level policy.
+\end{enumerate}
+
+
+% sub task discovery
