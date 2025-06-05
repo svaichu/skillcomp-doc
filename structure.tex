@@ -23,6 +23,7 @@
 \usepackage{subfigure}
 \usepackage{enumitem}
 \usepackage[pdfa,breaklinks,colorlinks,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{tcolorbox}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,11 +77,26 @@
 \end{center}
 \vspace{-0.3cm}
 \centerline{{Vaishnava Hari}}
-\centerline{\today}
+\centerline{\today, v2}
 
 % \begin{abstract}
 %     NUll
 % \end{abstract}
+
+% add a empty line
+\vspace{0.5cm}
+\begin{tcolorbox}[
+    colback=blue!5!white,    % Background color
+    colframe=blue!80!black,  % Border color
+    left=2mm,                % Space to the left of the content
+    enhanced,
+    borderline west={2pt}{0pt}{blue!80!black}, % Vertical line on the left
+    boxrule=0pt,             % No outer border
+    sharp corners
+]
+\paragraph{Updated}
+From the v1, section \underline{4: Method} has been added.
+\end{tcolorbox}
 
 \paragraph{Dream}
     \input{data/dream.tex}
@@ -92,21 +108,11 @@
     \input{data/plan.tex}
 
 \section{Previous Works}
-    % \subsection{Hirarchical Reinforcement Learning}
-    %     \input{data/hrl.tex}
-
     \subsection{Vision-Language-Action}
         \input{data/vla.tex}
 
-% \section{Problem}
-%     \input{problem.tex}
-
-% \section{Method}
-%     \input{method.tex}
-
-% \section{Implementation}
-%     \input{implementation.tex}
-
+\section{Method}
+    \input{data/method.tex}
 % import bibtex
 \bibliographystyle{IEEEtran}
 \bibliography{bib/vl*-rl, bib/hierarchical}

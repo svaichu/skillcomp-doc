@@ -31,6 +31,23 @@
   file = {/home/vaishnavahari/Zotero/storage/IBHWVXTV/Earle et al. - 2017 - Hierarchical Subtask Discovery With Non-Negative Matrix Factorization.pdf;/home/vaishnavahari/Zotero/storage/47RFS9TU/1708.html}
 }
 
+@misc{frauenknechtTrustModelWhere2024,
+  title = {Trust the {{Model Where It Trusts Itself}} -- {{Model-Based Actor-Critic}} with {{Uncertainty-Aware Rollout Adaption}}},
+  author = {Frauenknecht, Bernd and Eisele, Artur and Subhasish, Devdutt and Solowjow, Friedrich and Trimpe, Sebastian},
+  year = {2024},
+  month = jun,
+  number = {arXiv:2405.19014},
+  eprint = {2405.19014},
+  primaryclass = {cs},
+  doi = {10.48550/arXiv.2405.19014},
+  urldate = {2025-05-31},
+  abstract = {Dyna-style model-based reinforcement learning (MBRL) combines model-free agents with predictive transition models through model-based rollouts. This combination raises a critical question: 'When to trust your model?'; i.e., which rollout length results in the model providing useful data? Janner et al. (2019) address this question by gradually increasing rollout lengths throughout the training. While theoretically tempting, uniform model accuracy is a fallacy that collapses at the latest when extrapolating. Instead, we propose asking the question 'Where to trust your model?'. Using inherent model uncertainty to consider local accuracy, we obtain the Model-Based Actor-Critic with Uncertainty-Aware Rollout Adaption (MACURA) algorithm. We propose an easy-to-tune rollout mechanism and demonstrate substantial improvements in data efficiency and performance compared to state-of-the-art deep MBRL methods on the MuJoCo benchmark.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Machine Learning},
+  file = {/home/vaishnavahari/Zotero/storage/8SWSZAWL/Frauenknecht et al. - 2024 - Trust the Model Where It Trusts Itself -- Model-Based Actor-Critic with Uncertainty-Aware Rollout Ad.pdf}
+}
+
 @inproceedings{haarnojaLatentSpacePolicies2018,
   title = {Latent {{Space Policies}} for {{Hierarchical Reinforcement Learning}}},
   booktitle = {Proceedings of the 35th {{International Conference}} on {{Machine Learning}}},
@@ -44,6 +61,14 @@
   abstract = {We address the problem of learning hierarchical deep neural network policies for reinforcement learning. In contrast to methods that explicitly restrict or cripple lower layers of a hierarchy to force them to use higher-level modulating signals, each layer in our framework is trained to directly solve the task, but acquires a range of diverse strategies via a maximum entropy reinforcement learning objective. Each layer is also augmented with latent random variables, which are sampled from a prior distribution during the training of that layer. The maximum entropy objective causes these latent variables to be incorporated into the layer's policy, and the higher level layer can directly control the behavior of the lower layer through this latent space. Furthermore, by constraining the mapping from latent variables to actions to be invertible, higher layers retain full expressivity: neither the higher layers nor the lower layers are constrained in their behavior. Our experimental evaluation demonstrates that we can improve on the performance of single-layer policies on standard benchmark tasks simply by adding additional layers, and that our method can solve more complex sparse-reward tasks by learning higher-level policies on top of high-entropy skills optimized for simple low-level objectives.},
   langid = {english},
   file = {/home/vaishnavahari/Zotero/storage/J7L4ND38/Haarnoja et al. - 2018 - Latent Space Policies for Hierarchical Reinforcement Learning.pdf;/home/vaishnavahari/Zotero/storage/MM87QYTH/Supplementary - Haarnoja et al. - 2018 - Latent Space Policies for Hierarchical Reinforcement Learning.pdf}
+}
+
+@article{haarnojaReinforcementLearningDeep,
+  title = {Reinforcement {{Learning}} with {{Deep Energy-Based Policies}}},
+  author = {Haarnoja, Tuomas and Tang, Haoran and Abbeel, Pieter and Levine, Sergey},
+  abstract = {We propose a method for learning expressive energy-based policies for continuous states and actions, which has been feasible only in tabular domains before. We apply our method to learning maximum entropy policies, resulting into a new algorithm, called soft Q-learning, that expresses the optimal policy via a Boltzmann distribution. We use the recently proposed amortized Stein variational gradient descent to learn a stochastic sampling network that approximates samples from this distribution. The benefits of the proposed algorithm include improved exploration and compositionality that allows transferring skills between tasks, which we confirm in simulated experiments with swimming and walking robots. We also draw a connection to actorcritic methods, which can be viewed performing approximate inference on the corresponding energy-based model.},
+  langid = {english},
+  file = {/home/vaishnavahari/Zotero/storage/VAECUY3T/Haarnoja et al. - Reinforcement Learning with Deep Energy-Based Policies.pdf}
 }
 
 @article{hutsebaut-buysseHierarchicalReinforcementLearning2022,
