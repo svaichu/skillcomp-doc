@@ -23,12 +23,6 @@
 \usepackage{subfigure}
 \usepackage{enumitem}
 \usepackage[pdfa,breaklinks,colorlinks,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
-\usepackage{tcolorbox}
-
-\usepackage{apacite}
-\usepackage[options]{natbib}
-\usepackage[utf8]{inputenc}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,64 +57,34 @@
 % \color[rgb]{0.5,0.5,0.5} %grey 
 %%%%%%%%%%%%%%%
 
-% \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-%     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-
 \begin{document}
 
 \pagestyle{plain}
 \pagenumbering{arabic}
 
-% \title{Skill Composition}
-% \author{Vaishnavahari Seenivasan}
-% \date{\today}
-% \maketitle
-
-
 \begin{center} 
-\bfseries\uppercase{Skill composition}
+\bfseries\uppercase{Hierarchy of Robots}
 \end{center}
 \vspace{-0.3cm}
 \centerline{{Vaishnava Hari}}
-\centerline{\today, v2}
+\centerline{\today, \textit{v0}}
 
 % \begin{abstract}
 %     NUll
 % \end{abstract}
 
-% add a empty line
-\vspace{0.5cm}
-\begin{tcolorbox}[
-    colback=blue!5!white,    % Background color
-    colframe=blue!80!black,  % Border color
-    left=2mm,                % Space to the left of the content
-    enhanced,
-    borderline west={2pt}{0pt}{blue!80!black}, % Vertical line on the left
-    boxrule=0pt,             % No outer border
-    sharp corners
-]
-\paragraph{Updated}
-From the v1, section \underline{4: Method} has been added.
-\end{tcolorbox}
+\section{Objective}
+    \input{objective.tex}
 
-\paragraph{Dream}
-    \input{data/dream.tex}
+\section{Background}
+    \input{background.tex}
 
-\section{Overview of the approach}
-    \input{data/approach.tex}
+\section{Approach}
+    \input{approach.tex}
 
-\section{Next steps}
-    \input{data/plan.tex}
 
-\section{Previous Works}
-    \subsection{Vision-Language-Action}
-        \input{data/vla.tex}
-
-\section{Method}
-    \input{data/method.tex}
 % import bibtex
-\bibliographystyle{abbrv}
-% \bibliographystyle{apacite}
-\bibliography{bib/vl*-rl, bib/hierarchical}
+\bibliographystyle{IEEEtran}
+\bibliography{../bib/hierarchical.bib}
 
 \end{document}
