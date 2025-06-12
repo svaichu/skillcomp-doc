@@ -5,7 +5,7 @@
 
 % \subsection{Engineering design of the robot} 
 First step of the process is to define the robot configurtion, in other words, determining the number of link, type of joints, and other parameters. Later one can decide to either buy a robot that closely matches the requirements or design a new robot from scratch. Both these options further require several decision steps, such as selecting the actuators, materials, gripper and so on.
-The traditional engineering design process is too iterative and time consuming and knowledge is not easily transferable. 
+% The traditional engineering design process is too iterative and time consuming and knowledge is not easily transferable. 
 % #FIXME: add more details about the engineering design process
     
 Trying to address this problem, there have been attempts like \textit{kinematic automatic}, \textit{modular joints} and \textit{Text-to-CAD}.
@@ -13,13 +13,13 @@ Trying to address this problem, there have been attempts like \textit{kinematic 
 
 
 \subsection{Linkage Synthesis}
+Challenge: Too data intensive, only 1 DoF and 2D acheived. cite- Lyu et al, 2024 and Nobari et al, 2022.
+A better approach would be to use the function learned from the above graph to arrive at a suitable linkage.
+Even the previous work, approach the problem in a similar data based setup, their learnt function does not inherit the relationship between the emboidiments/morphologies.
 
 
-Challenge: Too data intensive, only 1 DoF and 2D acheived. 
-
-
-\subsection{Text-to-CAD}
-Text-to-CAD models generates 3D CAD geometry from text description
-
+% \subsection{Text-to-CAD}
+% Current limitations: Simple text input from the user is not sufficient to generate a complex assembly. 
+% This could be addressed by using the out from the prevous step
 
 
