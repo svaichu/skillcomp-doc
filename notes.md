@@ -20,3 +20,17 @@ Skill (volunteer, learned and task oriented) vs Gait (Building blocks for skill)
 > **Current:** Plan for knowledge graph  
 > Objective: Address robot varying (or evolution) problem
 > Sparse vs dense reward.
+
+KG is the backbone. 
+
+"Sack element", is it needed for policy? 
+- How obervation is organised
+<!-- - In latent representation -->
+
+***Policy Arch***
+- Stactable
+
+
+
+***Pattern***
+Learn latent variable representation from hierarchy
