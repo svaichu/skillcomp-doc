@@ -1,1 +1,6 @@
 Instead of passing the morphology information to a fixed architecture to meet a diversity of morphologies, an alternative approach could be to let the architecture grow with the complexity of the morphology.
+There have been several similar approaches in the past, \cite{deshpandeDeepCPGPoliciesRobot2023} \cite{whitmanLearningModularRobot2023} attempt to couple the growing complexity of the morphology with the complexity of the controller. The resulting architecture from the above works does not extrapolate well, a requirement well defined by \cite{parakhAnyBodyBenchmarkSuite2025}.
+
+To mitigate this issue, the relationship between differnt emboidiments and morphologies need to be utilized.
+This can be achieved by building a hierarchy of robot emboidiments/mechanisms, where each level of the hierarchy corresponds to a different level of complexity. 
+Such a knowledge graph would allow us to learn the function responsible for the relationship between the morphology and the controller, rather than directly learning the controller for each morphology.
