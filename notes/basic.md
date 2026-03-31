@@ -13,6 +13,8 @@ For solving this problem, do we need Hierarchy?
 2. Robot (morphology) is varying, then we have morphology invariant policy or knowledge transfer. This is multi-embodiment learning.
 Should I start working on this while the above problem is still open?
 
+3. Observation is too complex, will deal with it later. One approach I can think of is to project obs input to sysml like ideal world representation. 
+
 Either way, exploring Hierarchical underlying structure could be useful. Because, I suspect Task and Robot morphology is coupled (assumption, citation needed).
 
 Skill (volunteer, learned and task oriented) vs Gait (Building blocks for skill) 
@@ -34,3 +36,7 @@ KG is the backbone.
 
 ***Pattern***
 Learn latent variable representation from hierarchy
+
+Top-down vs bottom-up
+
+How is the vocab
