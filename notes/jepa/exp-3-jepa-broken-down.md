@@ -20,7 +20,7 @@ Inference:
 2. Command: trigger a higher order skill(args, w_n,t)
 3. Inside that skill.
     - Encode input into z_t and z_goal
-    - List its option(args)
+    - List available option(args)
     - Choose sequence of option(args) to reach z_goal.
 
 
@@ -33,7 +33,7 @@ Training:
 Obs encoder:
 
 
-0th skill:
+0th skill: example, line , circular, etc
 Online gymanisium env
 
 
@@ -43,3 +43,5 @@ Do jepa style learning for encoder.
 Predictor function
 
 
+Question:
+1. In options, selecting crt behaviour is difficult. is it made simpler by using jepa?
