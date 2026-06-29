@@ -29,6 +29,7 @@ Real robot demonstration data. `robotdataset` (local pkg) loads OXE, Table30v2, 
 | gymnasium/robotics | [docs](https://robotics.farama.org/) · [code](https://github.com/Farama-Foundation/Gymnasium-Robotics) | Fetch / Shadow Hand / Ant Maze envs; Farama Foundation |
 | MimicGen | [site](https://mimicgen.github.io/) · [code](https://github.com/NVlabs/mimicgen) · [data](https://huggingface.co/datasets/amandlek/mimicgen_datasets) · [paper](https://arxiv.org/abs/2310.17596) | Data generator: scales human demos to 48k+ synthetic trajectories across 12 tasks |
 | PushT | [code](https://github.com/real-stanford/diffusion_policy) · [data](https://diffusion-policy.cs.columbia.edu/data/training/) · [paper](https://arxiv.org/abs/2303.04137) | 2D T-block pushing env from Diffusion Policy; ~200 expert demos; simple but widely used for policy benchmarking |
+| MolmoSpaces | [data](https://hf.co/datasets/allenai/molmospaces) · [paper](https://arxiv.org/abs/2602.11337) | AllenAI open ecosystem; diverse indoor scenes, annotated objects, grasps, MuJoCo assets; large-scale multi-task multi-simulator robot policy benchmark |
 
 ---
 
